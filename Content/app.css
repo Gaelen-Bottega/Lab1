@@ -1,4 +1,32 @@
+/* Body */
 body 
 {
-    background-color: yellow;
+    font-family: 'Inter', sans-serif;
 }
+
+/* Navbar */
+.flex-auto 
+{
+    flex: auto;
+}
+
+.nav-border
+{
+    border: 1px solid transparent;
+}
+
+/* Background image */
+.background-img
+{
+    background-image: url("../Assets/kees-streefkerk-Adl90-aXYwA-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Title */
+.title 
+{
+    font-size: 4em;
+}
+
+/* Helper classes */
