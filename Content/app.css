@@ -37,3 +37,26 @@ body
 {
     width: 400px;
 }
+
+/* SERVICES */
+.service-card
+{
+    width: 25%;
+    height: 63%;
+    margin: 3%;
+}
+
+/* PROJECT */
+.project-card
+{
+    width: 25%;
+    height: 55%;
+    margin: 3%;
+}
+
+/* Contact */
+
+#inputMessage
+{
+    height: 150px;
+}

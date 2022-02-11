@@ -14,7 +14,7 @@ Gaelen Rhoads
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../Content/app.css">
-    <script src="app.js"></script>
+    <script src="contact-us.js"></script>
     <script src="https://kit.fontawesome.com/209f13052a.js" crossorigin="anonymous"></script>
     <title>Lab 1 - Contact Us</title>
 </head>
@@ -32,7 +32,37 @@ Gaelen Rhoads
         </ul>
     </div>
     <div class="container-fluid bg-image d-flex justify-content-center align-items-center background-img">
-        <p class="text-black title">Make a contact us form here!</p>
+        <div class="card contact-form-card">
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-muted">
+                        Enter your email in the form: <i>email@domain.com</i></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputNumber" class="form-label">Number</label>
+                        <input type="tel" class="form-control" id="inputNumber">
+                    <div id="numberHelp" class="form-text text-muted">
+                        Enter your number in the form: <i>000-000-0000</i></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputMessage" class="form-label">Message</label>
+                        <input type="textarea" class="form-control" id="inputMessage">
+                    </div>
+                    <div class="justify-content-center d-flex">
+                        <button type="reset" class="btn btn-primary m-2 mr-5">Reset</button>
+                        <button type="button" onclick="sumbitConsole()" id="submitButton" class="btn btn-primary m-2">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
