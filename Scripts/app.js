@@ -1,17 +1,17 @@
 function start()
 {
-    homepage();
+    changeNav();
 }
 
 // call start after the window loads
 window.addEventListener("load", start, false);
 
-// Homepage
-function homepage()
+function changeNav()
 {
-    let homepageTitle = "Welcome";
-    document.getElementById("homepage-title").innerHTML = homepageTitle;
+    var product = document.getElementById("navProduct");
+    product.innerHTML = `<i class="fa-solid fa-table-cells pr-2 fa-sm"></i>Projects`;
 }
+
 
 
 

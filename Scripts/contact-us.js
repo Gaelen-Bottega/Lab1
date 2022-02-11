@@ -1,16 +1,10 @@
 function start()
 {
-    contactUs();
     document.getElementById("submitButton").addEventListener("click", redirect, false);
 }
 
 // call start after the window loads
 window.addEventListener("load", start, false);
-
-function contactUs()
-{
-    
-}
 
 function sumbitConsole()
 {
