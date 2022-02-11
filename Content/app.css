@@ -23,10 +23,17 @@ body
     background-size: cover;
 }
 
+/* HOMEPAGE */
+
 /* Title */
-.title 
+.homepage-title 
 {
     font-size: 4em;
 }
 
-/* OTHER PAGES */
+/* ABOUT US */
+
+.about-card
+{
+    width: 400px;
+}

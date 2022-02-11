@@ -16,7 +16,7 @@ Gaelen Rhoads
     <link rel="stylesheet" type="text/css" href="../Content/app.css">
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/209f13052a.js" crossorigin="anonymous"></script>
-    <title>Lab 1 - Homepage</title>
+    <title>Lab 1 - About Us</title>
 </head>
 <body>
     <div>
@@ -32,7 +32,14 @@ Gaelen Rhoads
         </ul>
     </div>
     <div class="container-fluid bg-image d-flex justify-content-center align-items-center background-img">
-        <p class="text-black title">Put card with your photo and some details about yourself</p>
+        <div class="card about-card">
+            <img class="card-img-top" src="../Assets/gaelen-rhoads.png" alt="Gaelen Rhoads">
+            <div class="card-body">
+                <h4 id="aboutCardName" class="card-title"></h4>
+                <p id="aboutCardDesc" class="card-text aboutCardDesc"></p>
+                <a href="https://docs.google.com/document/d/1nxsEFHCD8mAL2O4HPKhCJiBYh-ByWZ8nVcU2Pv6b3eU/edit?usp=sharing" id="aboutCardButton" class="btn btn-primary justify-content-center d-flex" target="_blank"></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
