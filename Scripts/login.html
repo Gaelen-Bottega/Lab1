@@ -1,0 +1,67 @@
+<!-- 
+Gaelen Rhoads
+100804776
+02/09/2022 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../Content/app.css">
+    <script src="app.js"></script>
+    <!-- <script src="contact-us.js"></script> -->
+    <script src="https://kit.fontawesome.com/209f13052a.js" crossorigin="anonymous"></script>
+    <title>Lab 1 - Contact Us</title>
+</head>
+<body>
+    <div>
+        <!-- Navbar -->
+        <ul class="nav navbar-expand-sm bg-dark navbar-dark fixed-top nav-tabs nav-border">
+            <li class="pl-3 text-white"><a class="navbar-brand" href="index.html">WEBD6201 - Lesson 1</a></li>
+            <ul id="parentNav" class="nav justify-content-end flex-auto">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="fa-solid fa-house pr-2 fa-sm"></i>Home</a></li>
+                <li class="nav-item"><a id="navProduct" class="nav-link text-white" href="products.html"></a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="services.html"><i class="fa-solid fa-bell pr-2 fa-sm"></i>Services</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about-us.html"><i class="fa-solid fa-circle-info pr-2 fa-sm"></i>About Us</a></li>
+                <li id="contactUsLi" class="nav-item"><a class="nav-link active" href="contact-us.html"><i class="fa-solid fa-phone pr-2 fa-sm"></i>Contact Us</a></li>
+            </ul>
+        </ul>
+    </div>
+    <!-- Parent div holding all content  -->
+    <div class="container-fluid bg-image d-flex justify-content-center align-items-center background-img">
+        <div class="card contact-form-card">
+            
+            <div class="card-body">
+                <h4 id="loginCardTitle" class="card-title">Login</h4>
+                <form>
+                    <!-- Name input -->
+                    <div class="mb-3">
+                        <label for="inputUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="inputUsername">
+                    </div>
+                    <!-- Password input -->
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <!-- Buttons -->
+                    <div class="justify-content-center d-flex">
+                        <button type="button" onclick="sumbitConsole()" id="submitButton" class="btn btn-primary m-2">Submit</button>
+                    </div>
+
+                    <div class="justify-content-center d-flex mt-2">
+                        <p>Don't have an account? <a href="register.html">Register Here!</a></p>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
