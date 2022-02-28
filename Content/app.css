@@ -65,3 +65,10 @@ body
 {
     height: 150px;
 }
+
+/* Login / Register */
+
+#ErrorMessage
+{
+    color: red;
+}

@@ -65,6 +65,46 @@ function insert()
     currentNode.parentElement.insertBefore(li, currentNode);
 } // end function insert
 
+function insertUserLoggedIn()
+{
+    var currentNode;
+    var parentElement;
+
+    // Set the parent element equal to the parent ul tag holding the nav bar
+    parentElement = document.getElementById("parentNav");
+
+    // Set the current node to the nav link we want to insert our new one before
+    currentNode = document.getElementById("login");
+
+    // Create new list item and add the bootstrap class
+    var li = document.createElement("li");
+    li.classList.add("nav-item");
+    
+    // Code to add a redirect to account page in the future
+    var navItem = document.createElement("a");
+    navItem.href = "account.html";
+    navItem.classList.add("nav-link", "text-white");
+
+    // Nest the link tag inside the list item
+    li.appendChild(navItem);
+
+    // Create an i tag to hold font awesome icon and add needed classes.
+    // Then nest it before the link tag
+    var icon = document.createElement("i");
+    icon.classList.add("fa-solid", "fa-user", "pr-2");
+    navItem.appendChild(icon);
+
+    // Add text to the link after the icon and append it to the navItem node
+    var username = document.getElementById("inputUsername");
+    var navUsername = username.value;
+    var link = document.createTextNode(navUsername);
+    navItem.appendChild(link);
+
+    // Append new list item to parent ul tag and insert it before Contact Us link
+    parentElement.appendChild(li);
+    currentNode.parentElement.insertBefore(li, currentNode);
+} // end function insert
+
 
 
 
