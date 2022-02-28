@@ -1,6 +1,6 @@
 // Gaelen Rhoads
 // 100804776
-// 02/09/2022 
+// 02/23/2022 
 
 /**
  * Class user of first name, last name, email and password.
@@ -20,12 +20,14 @@ class User {
 }
 // Register section
 $(document).ready(function () {
+    // Hide error when user reaches page and assume there are no errors
     $('#ErrorMessage').hide();
     let firstNameError = true;
     let lastNameError = true;
     let emailError = true;
     let passwordError = true;
     let confirmPasswordError = true;
+    // Everytime a person types, check for valid entry
     $('#inputFirstName').keyup(function () {
         validateFirstLastName();
     });
@@ -159,9 +161,8 @@ $(document).ready(function () {
 			(confirmPasswordError == true) &&
 			(emailError == true)) 
             {
-                
-                return submitUserConsole();
-                // submitUserConsole();
+                submitUserConsole();
+                return true;
             } 
             else 
             {
@@ -171,22 +172,19 @@ $(document).ready(function () {
 
 });
 
+/**
+ * Submits a valid user to the console
+ */
 function submitUserConsole()
 {
     let firstNameValue = $('#inputFirstName').val();
     let lastNameValue = $('#inputLastName').val();
-    const email =
-    document.getElementById('inputEmail');
+    const email = document.getElementById('inputEmail');
 	let emailValue = email.value;
     let passwordValue = $('#inputPassword').val();
     const user1 = new User(firstNameValue, lastNameValue, emailValue, passwordValue);
     let aUser = user1.toConsole();
-    console.log(aUser)
-    // Console log a user
-    // console.log(User.firstName);
-    // console.log(User.lastName);
-    // console.log(User.email);
-    // console.log(User.password);
+    console.log(aUser);
 }
  
 
